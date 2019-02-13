@@ -19,6 +19,7 @@ public class Task {
     private Long id;
     private String name;
 
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM/dd/yyyy", timezone="GMT")
     @JsonFormat(pattern = "MM/dd/yyyy")
     private LocalDate dueDate;
     private boolean completed;
